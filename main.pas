@@ -64,6 +64,8 @@ begin
     StringGrid1.Cells[3, i + 1] := intToStr(FilmArray[i].year);
     StringGrid1.Cells[4, i + 1] := intToStr(FilmArray[i].rating);
   end;
+  if length(filmArray) = 0 then
+    leastRatedFilm.genre := 'Data unavailable';
   Edit4.Text := leastRatedFilm.genre;
 end;
 

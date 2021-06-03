@@ -70,40 +70,41 @@ begin
   temp := structure(xmin, xmax, ymin, ymax);
   if length(temp) < 2 then
     raise Exception.Create('Not enough span to plot!');
-  Image1.Canvas.FillRect(TRect.Create(0, 0, Image1.Width, Image1.Height));
-  Image1.Canvas.Pen.Width := 2;
-  Image1.Canvas.MoveTo(40, 0);
-  Image1.Canvas.LineTo(45, 10);
-  Image1.Canvas.MoveTo(40, 0);
-  Image1.Canvas.LineTo(35, 10);
-  Image1.Canvas.MoveTo(40, 0);
-  Image1.Canvas.LineTo(40, 310);
-  Image1.Canvas.MoveTo(40, 310);
-  Image1.Canvas.LineTo(610, 310);
-  Image1.Canvas.MoveTo(610, 310);
-  Image1.Canvas.LineTo(600, 305);
-  Image1.Canvas.MoveTo(610, 310);
-  Image1.Canvas.LineTo(600, 315);
-  Image1.Canvas.MoveTo(40, 310);
-  Image1.Canvas.Pen.Color := RGB(0, 115, 207);
-  Image1.Canvas.Pen.Width := 3;
-  Image1.Canvas.MoveTo(40,
-                  round(310 - ((temp[0] - ymin) / (ymax - ymin)) * 300));
-  for i := 1 to length(temp) - 1 do begin
-    Image1.Canvas.LineTo(round(40 + ((i) / (xmax - xmin)) * 560),
-                  round(310 - ((temp[i] - ymin) / (ymax - ymin)) * 300));
-  end;
-  Image1.Canvas.Pen.Width := 1;
-  Image1.Canvas.Pen.Color := RGB(200, 200, 200);
-  for i := 0 to length(temp) - 1 do begin
-    Image1.Canvas.MoveTo(round(40 + ((i) / (xmax - xmin)) * 560), 310);
-    Image1.Canvas.LineTo(round(40 + ((i) / (xmax - xmin)) * 560), 10);
-    Image1.Canvas.TextOut(round(35 + ((i) / (xmax - xmin)) * 560), 320, intToStr(i + xmin));
-  end;
-  for i := ymin to ymax do begin
-    Image1.Canvas.MoveTo(600, round(310 - ((i - ymin) / (ymax - ymin)) * 300));
-    Image1.Canvas.LineTo(40, round(310 - ((i - ymin) / (ymax - ymin)) * 300));
-    Image1.Canvas.TextOut(20, round(305 - ((i - ymin) / (ymax - ymin)) * 300), intToStr(i));
+  with Image1.Canvas do begin
+    FillRect(TRect.Create(0, 0, Image1.Width, Image1.Height));
+    Pen.Width := 2;
+    MoveTo(40, 0);
+    LineTo(45, 10);
+    MoveTo(40, 0);
+    LineTo(35, 10);
+    MoveTo(40, 0);
+    LineTo(40, 310);
+    MoveTo(40, 310);
+    LineTo(610, 310);
+    MoveTo(610, 310);
+    LineTo(600, 305);
+    MoveTo(610, 310);
+    LineTo(600, 315);
+    MoveTo(40, 310);
+    Pen.Color := RGB(0, 115, 207);
+    Pen.Width := 3;
+    MoveTo(40, round(310 - ((temp[0] - ymin) / (ymax - ymin)) * 300));
+    for i := 1 to length(temp) - 1 do begin
+      LineTo(round(40 + ((i) / (xmax - xmin)) * 560),
+              round(310 - ((temp[i] - ymin) / (ymax - ymin)) * 300));
+    end;
+    Pen.Width := 1;
+    Pen.Color := RGB(200, 200, 200);
+    for i := 0 to length(temp) - 1 do begin
+      MoveTo(round(40 + ((i) / (xmax - xmin)) * 560), 310);
+      LineTo(round(40 + ((i) / (xmax - xmin)) * 560), 10);
+      TextOut(round(35 + ((i) / (xmax - xmin)) * 560), 320, intToStr(i + xmin));
+    end;
+    for i := ymin to ymax do begin
+      MoveTo(600, round(310 - ((i - ymin) / (ymax - ymin)) * 300));
+      LineTo(40, round(310 - ((i - ymin) / (ymax - ymin)) * 300));
+      TextOut(20, round(305 - ((i - ymin) / (ymax - ymin)) * 300), intToStr(i));
+    end;
   end;
 end;
 
