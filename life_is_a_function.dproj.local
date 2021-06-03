@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.007,C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\mainform.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.071,C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\mainform.pas=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.071,C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\mainform.dfm=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.750,=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\custom_output.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.871,=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\plot.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.578,C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\life_is_a_function.dproj=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.589,=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.680,=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\add_dialog.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.810,=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.466,=C:\Users\pyrom\OneDrive\Документы\Embarcadero\Studio\Projects\libFilmFile.pas</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
