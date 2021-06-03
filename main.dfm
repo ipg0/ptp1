@@ -2,7 +2,7 @@ object Form1: TForm1
   Left = 0
   Top = 0
   BorderStyle = bsSingle
-  Caption = 'Element Table'
+  Caption = 'Cinema Management Software'
   ClientHeight = 359
   ClientWidth = 662
   Color = clBtnFace

@@ -2,7 +2,7 @@ object Form3: TForm3
   Left = 0
   Top = 0
   BorderStyle = bsSingle
-  Caption = 'Form3'
+  Caption = 'Query Results'
   ClientHeight = 352
   ClientWidth = 536
   Color = clBtnFace

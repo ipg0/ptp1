@@ -2,7 +2,7 @@ object Form4: TForm4
   Left = 0
   Top = 0
   BorderStyle = bsSingle
-  Caption = 'Form4'
+  Caption = 'Graph'
   ClientHeight = 359
   ClientWidth = 641
   Color = clBtnFace

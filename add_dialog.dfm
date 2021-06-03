@@ -2,7 +2,7 @@ object Form2: TForm2
   Left = 0
   Top = 0
   BorderStyle = bsSingle
-  Caption = 'Add Element'
+  Caption = 'Add'
   ClientHeight = 289
   ClientWidth = 227
   Color = clBtnFace
