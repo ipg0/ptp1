@@ -77,6 +77,7 @@ begin
     LineTo(45, 10);
     MoveTo(40, 0);
     LineTo(35, 10);
+    TextOut(50, 20, 'Number of popular films (rated 8+)');
     MoveTo(40, 0);
     LineTo(40, 310);
     MoveTo(40, 310);
@@ -85,6 +86,7 @@ begin
     LineTo(600, 305);
     MoveTo(610, 310);
     LineTo(600, 315);
+    TextOut(630, 300, 'Year');
     MoveTo(40, 310);
     Pen.Color := RGB(0, 115, 207);
     Pen.Width := 3;

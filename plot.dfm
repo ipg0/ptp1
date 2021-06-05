@@ -4,7 +4,7 @@ object Form4: TForm4
   BorderStyle = bsSingle
   Caption = 'Graph'
   ClientHeight = 359
-  ClientWidth = 641
+  ClientWidth = 689
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -18,7 +18,7 @@ object Form4: TForm4
   object Image1: TImage
     Left = 8
     Top = 8
-    Width = 625
+    Width = 673
     Height = 345
   end
 end
