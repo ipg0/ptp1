@@ -98,7 +98,7 @@ begin
     read(dataFile, temp);
     seek(dataFile, filepos(dataFile) - 2);
     write(dataFile, temp);
-    seek(dataFile, filepos(dataFile) + 2);
+    seek(dataFile, filepos(dataFile) + 1);
   end;
   seek(dataFile, num - 1);
   truncate(dataFile);

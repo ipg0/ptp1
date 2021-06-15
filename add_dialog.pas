@@ -42,7 +42,6 @@ procedure TForm2.Button1Click(Sender: TObject);
 begin
   FilmFile.add(libFilmFile.TFilm.Create(Edit1.Text, Edit2.Text, Edit3.Text, strToInt(Edit4.Text), strToInt(Edit5.Text)));
   main.Form1.GridUpdate;
-  close();
 end;
 
 end.

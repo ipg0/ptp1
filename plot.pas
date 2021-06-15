@@ -72,6 +72,7 @@ begin
     raise Exception.Create('Not enough span to plot!');
   with Image1.Canvas do begin
     FillRect(TRect.Create(0, 0, Image1.Width, Image1.Height));
+    Pen.Color := RGB(0, 0, 0);
     Pen.Width := 2;
     MoveTo(40, 0);
     LineTo(45, 10);
